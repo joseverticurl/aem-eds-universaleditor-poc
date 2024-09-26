@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://localhost:8443/content/genting"
+    url: "https://localhost:8443/content/gens"
     type: "markup"
     suffix: ".html"

@@ -1,6 +1,6 @@
 {
   "mappings": [
-    "/content/genting/:/",
-    "/content/genting/configuration:/.helix/config.json"
+    "/content/gens/:/",
+    "/content/gens/configuration:/.helix/config.json"
   ]
 }
