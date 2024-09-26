@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://localhost:8442/content/aem-eds-universaleditor-training"
+    url: "https://localhost:8442/content/aem-eds-universaleditor-training/"
     type: "markup"
     suffix: ".html"
