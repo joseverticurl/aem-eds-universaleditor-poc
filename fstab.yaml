@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://localhost:8443/bin/franklin.delivery/joseverticurl/aem-eds-universaleditor-training/main"
+    url: "https://author-p130360-e1272151.adobeaemcloud.com/bin/franklin.delivery/adobe-rnd/aem-boilerplate-xwalk/main"
     type: "markup"
     suffix: ".html"
