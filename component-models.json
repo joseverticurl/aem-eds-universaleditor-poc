@@ -189,7 +189,7 @@
     "id": "imagetext",
     "fields": [
       {
-        "component": "dynamicMedia",
+        "component": "image",
         "valueType": "string",
         "name": "image",
         "label": "Image",
