@@ -1,26 +1,20 @@
-(function initializeImageText() {
-    const imagetextBlocks = document.querySelectorAll('.imagetext-container');
+export default function decorate(block) {
+    const imageElement = block.querySelector('.imagetext-image');
+    const alignment = block.dataset.alignment;
   
-    imagetextBlocks.forEach(block => {
-      const imageElement = block.querySelector('.imagetext-image');
-      const alignment = block.dataset.alignment;
+    // Apply Smart Crop to the image
+    const smartCropUrl = applySmartCrop(imageElement.dataset.src); 
+    imageElement.src = smartCropUrl;
   
-      // Apply Smart Crop settings
-      const smartCropUrl = applySmartCrop(imageElement.dataset.src); 
-  
-      imageElement.src = smartCropUrl;
-  
-      // Set alignment
-      if (alignment === 'left') {
-        block.classList.add('imagetext-left');
-      } else {
-        block.classList.add('imagetext-right');
-      }
-    });
-  
-    function applySmartCrop(imageUrl) {
-      // Adjust the image URL for Smart Crop
-      return `${imageUrl}?crop=smart&width=400&height=300`; // Example crop parameters
+    // Set alignment class
+    if (alignment === 'left') {
+      block.classList.add('imagetext-left');
+    } else if (alignment === 'right') {
+      block.classList.add('imagetext-right');
     }
-  })();
+  }
   
+  // Function to apply Smart Crop to the image
+  function applySmartCrop(imageUrl) {
+    return `${imageUrl}?crop=smart&width=400&height=300`; // Example parameters for Smart Crop
+  }  
