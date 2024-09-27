@@ -194,7 +194,6 @@
         "name": "image",
         "label": "Image",
         "description": "Select an image from Dynamic Media with Smart Crop",
-        "smartCrop": true,
         "required": true
       },
       {
