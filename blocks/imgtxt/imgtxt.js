@@ -1,7 +1,6 @@
-import './imagetext.css';
-
 // Function to apply smart cropping to the image
 function applySmartCrop(image) {
+  alert(image);
   // Add your smart crop logic here
   // For example, you might modify the image's src or dimensions
 }
