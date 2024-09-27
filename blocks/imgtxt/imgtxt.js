@@ -6,7 +6,7 @@ function applySmartCrop(image) {
 }
 
 export default async function decorate(block) {
-  console.log('Block dataset:', block.dataset); 
+  console.log('Block dataset:', block.dataset);
   // Get the image, text, and alignment properties from the block
   const image = block.querySelector('.imagetext-image');
   const alignment = block.dataset.alignment || 'left'; // Default to 'left'
