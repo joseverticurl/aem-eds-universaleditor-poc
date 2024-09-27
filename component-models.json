@@ -186,50 +186,12 @@
     ]
   },
   {
-    "id": "imagetext",
+    "id": "fragment",
     "fields": [
       {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "description": "Select an image from Dynamic Media with Smart Crop",
-        "required": true,
-        "smartCrop": true
-      },
-      {
-        "component": "boolean",
-        "valueType": "boolean",
-        "name": "smartCrop",
-        "label": "Enable Smart Crop",
-        "description": "Check this box to enable Smart Crop for the image",
-        "default": false
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "text",
-        "label": "Text",
-        "description": "Enter the text to display next to the image",
-        "required": true
-      },
-      {
-        "component": "select",
-        "valueType": "string",
-        "name": "alignment",
-        "label": "Image Alignment",
-        "description": "Select the alignment of the image",
-        "options": [
-          {
-            "label": "Left",
-            "value": "left"
-          },
-          {
-            "label": "Right",
-            "value": "right"
-          }
-        ],
-        "default": "left"
+        "component": "aem-content",
+        "name": "reference",
+        "label": "Reference"
       }
     ]
   }
