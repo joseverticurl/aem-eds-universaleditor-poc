@@ -6,7 +6,7 @@ function applySmartCrop(image) {
 }
 
 export default async function decorate(block) {
-  console.log('Block dataset image :',block.querySelector('[data-aue-prop="image"]'));
+  console.log('Block dataset image :', block.querySelector('[data-aue-prop="image"]'));
   console.log('Block dataset smartCrop :', block.querySelector('[data-aue-prop="smartCrop"]'));
   console.log('Block dataset text :', block.querySelector('[data-aue-prop="text"]'));
   console.log('Block dataset alignment :', block.querySelector('[data-aue-prop="alignment"]'));
