@@ -198,6 +198,14 @@
         "smartCrop": true
       },
       {
+        "component": "checkbox",
+        "valueType": "boolean",
+        "name": "smartCrop",
+        "label": "Enable Smart Crop",
+        "description": "Check this box to enable Smart Crop for the image",
+        "default": false
+      },
+      {
         "component": "richtext",
         "valueType": "string",
         "name": "text",

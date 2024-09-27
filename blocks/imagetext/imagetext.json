@@ -7,8 +7,13 @@
         "type": "dynamicMedia",
         "label": "Image",
         "description": "Select an image from Dynamic Media with Smart Crop",
-        "required": true,
-        "smartCrop": true 
+        "required": true
+      },
+      "smartCrop": {
+        "type": "boolean", 
+        "label": "Enable Smart Crop",
+        "description": "Check this box to enable Smart Crop for the image",
+        "default": false
       },
       "text": {
         "type": "richtext",
