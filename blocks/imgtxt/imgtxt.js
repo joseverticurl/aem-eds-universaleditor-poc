@@ -22,8 +22,6 @@ export default async function decorate(block) {
   // Apply alignment styles
   block.classList.add(`imagetext-${alignment}`);
 
-  // Additional processing for the text content
-  if (textContent) {
-    block.classList.add(`imagetext-${block.dataset.alignment}`);
-  }
+  // Additional processing for the text content 
+  block.classList.add(`imagetext-${block.dataset.alignment}`);
 }
