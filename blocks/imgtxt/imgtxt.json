@@ -1,5 +1,5 @@
 {
-  "name": "imagetext",
+  "name": "imgtxt",
   "label": "Image with Text",
   "description": "A block for adding an image with smart cropping and text",
   "properties": {
