@@ -1,0 +1,23 @@
+.imagetext-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.imagetext-image {
+    width: 400px;
+    height: 300px;
+    object-fit: cover; /* Ensures the image respects the Smart Crop dimensions */
+}
+
+.imagetext-left .imagetext-image {
+    margin-right: 15px;
+}
+
+.imagetext-right .imagetext-image {
+    margin-left: 15px;
+}
+
+.imagetext-text {
+    flex: 1;
+    padding: 10px;
+}

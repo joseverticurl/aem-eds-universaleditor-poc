@@ -186,7 +186,7 @@
     ]
   },
   {
-    "id": "imagetext",
+    "id": "imgtxt",
     "fields": [
       {
         "component": "reference",
