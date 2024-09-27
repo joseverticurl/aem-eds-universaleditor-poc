@@ -24,6 +24,6 @@ export default async function decorate(block) {
 
   // Additional processing for the text content
   if (textContent) {
-    textContent.innerHTML = textContent.innerHTML.trim(); // Clean up any extra whitespace
+    //textContent.innerHTML = textContent.innerHTML.trim(); // Clean up any extra whitespace
   }
 }
