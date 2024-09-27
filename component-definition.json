@@ -173,15 +173,15 @@
           }
         },
         {
-          "title": "imgtxt",
-          "id": "imgtxt",
+          "title": "Columns",
+          "id": "columns",
           "plugins": {
             "xwalk": {
               "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
+                "resourceType": "core/franklin/components/columns/v1/columns",
                 "template": {
-                  "name": "imgtxt",
-                  "model": "imgtxt"
+                  "columns": "2",
+                  "rows": "1"
                 }
               }
             }
