@@ -5,7 +5,7 @@ function applySmartCrop(imageUrl) {
 
 export default function decorate(block) {
   const imageElement = block.querySelector('.imagetext-image');
-  const alignment = block.dataset.alignment;
+  const { alignment } = block.dataset;
   // Apply Smart Crop to the image
   const smartCropUrl = applySmartCrop(imageElement.dataset.src);
   imageElement.src = smartCropUrl;
@@ -16,4 +16,3 @@ export default function decorate(block) {
     block.classList.add('imagetext-right');
   }
 }
-
