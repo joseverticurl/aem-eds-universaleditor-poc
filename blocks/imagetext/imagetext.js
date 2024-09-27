@@ -11,8 +11,10 @@ export default function decorate(block) {
   imageElement.src = smartCropUrl;
   // Set alignment class
   if (alignment === 'left') {
+    alert('left');
     block.classList.add('imagetext-left');
   } else if (alignment === 'right') {
+    alert('right');
     block.classList.add('imagetext-right');
   }
 }
