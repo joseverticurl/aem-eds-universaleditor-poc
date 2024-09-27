@@ -6,11 +6,10 @@ function applySmartCrop(image) {
 }
 
 export default async function decorate(block) {
-  console.log('Block dataset image :', block.dataset.image);
-  console.log('image attribute :: ', block.getAttribute('data-image'));
-  console.log('Block dataset smartCrop :', block.dataset.smartCrop);
-  console.log('Block dataset text :', block.dataset.text);
-  console.log('Block dataset alignment :', block.dataset.alignment);
+  console.log('Block dataset image :',block.querySelector('[data-aue-prop="image"]'));
+  console.log('Block dataset smartCrop :', block.querySelector('[data-aue-prop="smartCrop"]'));
+  console.log('Block dataset text :', block.querySelector('[data-aue-prop="text"]'));
+  console.log('Block dataset alignment :', block.querySelector('[data-aue-prop="alignment"]'));
   // Get the image, text, and alignment properties from the block
   const image = block.querySelector('.imagetext-image');
   const alignment = block.dataset.alignment || 'left'; // Default to 'left'
