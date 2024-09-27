@@ -1,6 +1,6 @@
 {
   "mappings": [
-    "/content/gens/:/",
-    "/content/gens/configuration:/.helix/config.json"
+    "/content/aem-eds-universaleditor-training/:/",
+    "/content/aem-eds-universaleditor-training/configuration:/.helix/config.json"
   ]
 }
