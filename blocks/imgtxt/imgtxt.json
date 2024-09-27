@@ -1,63 +1,35 @@
 {
-  "definitions": [
-    {
-      "title": "imgtxt",
-      "id": "imgtxt",
-      "plugins": {
-        "xwalk": {
-          "page": {
-            "resourceType": "core/franklin/components/block/v1/block",
-            "template": {
-              "name": "imgtxt",
-              "model": "imgtxt"
-            }
-          }
-        }
-      }
+  "name": "imagetext",
+  "label": "Image with Text",
+  "description": "A block for adding an image with smart cropping and text",
+  "properties": {
+    "image": {
+      "type": "dynamicMedia",
+      "label": "Image",
+      "description": "Select an image from Dynamic Media with Smart Crop",
+      "required": true
+    },
+    "text": {
+      "type": "richtext",
+      "label": "Text",
+      "description": "Enter the text to display next to the image",
+      "required": true
+    },
+    "alignment": {
+      "type": "select",
+      "label": "Image Alignment",
+      "description": "Select the alignment of the image",
+      "options": [
+        { "label": "Left", "value": "left" },
+        { "label": "Right", "value": "right" }
+      ],
+      "default": "left"
+    },
+    "smartCrop": {
+      "type": "checkbox",
+      "label": "Enable Smart Crop",
+      "description": "Enable smart cropping for the image",
+      "default": false
     }
-  ],
-  "models": [
-    {
-      "id": "imgtxt",
-      "fields": [
-        {
-          "component": "reference",
-          "valueType": "string",
-          "name": "image",
-          "label": "Image",
-          "description": "Select an image from Dynamic Media with Smart Crop",
-          "required": true,
-          "smartCrop": true
-        },
-        {
-          "component": "boolean",
-          "valueType": "boolean",
-          "name": "smartCrop",
-          "label": "Enable Smart Crop",
-          "description": "Check this box to enable Smart Crop for the image",
-          "default": false
-        },
-        {
-          "component": "richtext",
-          "valueType": "string",
-          "name": "text",
-          "label": "Text",
-          "description": "Enter the text to display next to the image",
-          "required": true
-        },
-        {
-          "component": "select",
-          "valueType": "string",
-          "name": "alignment",
-          "label": "Image Alignment",
-          "description": "Select the alignment of the image",
-          "options": [
-            { "label": "Left", "value": "left" },
-            { "label": "Right", "value": "right" }
-          ],
-          "default": "left"
-        }
-      ]
-    }
-  ]
+  }
 }
