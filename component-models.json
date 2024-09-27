@@ -198,7 +198,7 @@
         "smartCrop": true
       },
       {
-        "component": "checkbox",
+        "component": "boolean",
         "valueType": "boolean",
         "name": "smartCrop",
         "label": "Enable Smart Crop",
