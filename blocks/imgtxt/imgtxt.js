@@ -8,7 +8,7 @@ function applySmartCrop(image) {
 export default async function decorate(block) {
   // Get the image, text, and alignment properties from the block
   const image = block.querySelector('.imagetext-image');
-  const textContent = block.querySelector('.imagetext-text');
+  //const textContent = block.querySelector('.imagetext-text');
   const alignment = block.dataset.alignment || 'left'; // Default to 'left'
 
   // Apply smart crop if the image element exists
@@ -22,6 +22,6 @@ export default async function decorate(block) {
   // Apply alignment styles
   block.classList.add(`imagetext-${alignment}`);
 
-  // Additional processing for the text content 
+  // Additional processing for the text content
   block.classList.add(`imagetext-${block.dataset.alignment}`);
 }
