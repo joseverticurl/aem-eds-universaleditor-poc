@@ -7,9 +7,9 @@ function applySmartCrop(image) {
   // Mobile smart crop name
   const mobile = 'Test250X250';
   const url = image.src;
-  const authoredBaseUrl = 'https://author-p35060-e135954.adobeaemcloud.com/content/dam/aem-eds-universaleditor-training';
+  const authorBaseUrl = 'https://author-p35060-e135954.adobeaemcloud.com/content/dam/aem-eds-universaleditor-training';
   // Remove the base URL by slicing the string
-  let result = url.substring(authoredBaseUrl.length);
+  let result = url.substring(authorBaseUrl.length);
   result = result.substring(0, result.length - 4);
   let finalUrl = `${dmBaseUrl}${result}`;
   if (window.matchMedia('(max-width: 767px)').matches) {
