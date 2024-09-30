@@ -16,7 +16,7 @@ export default async function decorate(block) {
 
   // Apply smart crop if the image element exists
   if (image) {
-    const smartCropEnabled = block.dataset.smartCrop === 'true';
+    const smartCropEnabled = true;
     if (smartCropEnabled) {
       applySmartCrop(image);
     }
