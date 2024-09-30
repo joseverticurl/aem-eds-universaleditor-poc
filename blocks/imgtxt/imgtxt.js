@@ -1,6 +1,7 @@
 // Function to apply smart cropping to the image
 function applySmartCrop(image) {
-  // Add your smart crop logic here..  
+  // Add your smart crop logic here..
+  console.log(image);
 }
 
 export default async function decorate(block) {
@@ -10,7 +11,7 @@ export default async function decorate(block) {
   console.log('Block dataset alignment :', block.querySelector('[data-aue-prop="alignment"]'));
   // Get the image, text, and alignment properties from the block
   const image = block.querySelector('.imagetext-image');
-  const alignment = block.dataset.alignment || 'left'; // Default to 'left'
+ // const alignment = block.dataset.alignment || 'left'; // Default to 'left'
 
   // Apply smart crop if the image element exists
   if (image) {
