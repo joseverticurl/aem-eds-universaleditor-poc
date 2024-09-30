@@ -1,8 +1,18 @@
 // Function to apply smart cropping to the image
 function applySmartCrop(image) {
-  alert(image);
-  // Add your smart crop logic here
-  // For example, you might modify the image's src or dimensions
+
+  // Add your smart crop logic here..
+
+  //Base url for scene : https://s7ap1.scene7.com/is/image/wpppartnersandbox
+  //Desktop smart crop name : fb600x400
+  //Mobile smart crop name  : Test250X250
+
+  // step 1 : Get the source from img tag [src="/content/dam/aem-eds-universaleditor-training/peak-performance.png]"
+  // step 2 : Get the path after /content/dam/aem-eds-universaleditor-training/
+  // step 3 : Append the path with base url and append the smart crop name as shown below
+    // Desktop scene7 url  : https://s7ap1.scene7.com/is/image/wpppartnersandbox/peak-performance:fb600x400?fmt=png-alpha
+    // Mobile scene7 url   : https://s7ap1.scene7.com/is/image/wpppartnersandbox/peak-performance:Test250X250?fmt=png-alpha
+  
 }
 
 export default async function decorate(block) {
@@ -20,11 +30,5 @@ export default async function decorate(block) {
     if (smartCropEnabled) {
       applySmartCrop(image);
     }
-  }
-
-  // Apply alignment styles
-  block.classList.add(`imagetext-${alignment}`);
-
-  // Additional processing for the text content
-  block.classList.add(`imagetext-${block.dataset}`);
+  } 
 }
