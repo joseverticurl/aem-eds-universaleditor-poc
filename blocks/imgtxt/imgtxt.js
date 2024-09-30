@@ -9,7 +9,7 @@ function applySmartCrop(image) {
   const url = image.src;
   const authoredBaseUrl = 'https://author-p35060-e135954.adobeaemcloud.com/content/dam/aem-eds-universaleditor-training';
   // Remove the base URL by slicing the string
-  const result = url.substring(authoredBaseUrl.length);
+  let result = url.substring(authoredBaseUrl.length);
   result = result.substring(0, result.length - 4);
   // Desktop scene7 url  : https://s7ap1.scene7.com/is/image/wpppartnersandbox/peak-performance:fb600x400?fmt=png-alpha
   const finalUrl = `${dmBaseUrl}/${result}:${desktop}`;
