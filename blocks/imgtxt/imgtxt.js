@@ -2,6 +2,7 @@
 function applySmartCrop(image) {
   // Add your smart crop logic here..
   console.log(image);
+  console.log();
 }
 
 export default async function decorate(block) {
