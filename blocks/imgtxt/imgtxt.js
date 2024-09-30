@@ -1,9 +1,9 @@
 // Function to apply smart cropping to the image
 function applySmartCrop(image) {
   // Add your smart crop logic here..
-  const dmBaseUrl = "https://s7ap1.scene7.com/is/image/wpppartnersandbox";
+  const dmBaseUrl = 'https://s7ap1.scene7.com/is/image/wpppartnersandbox';
   //Desktop smart crop name 
-  const desktop="fb600x400";
+  const desktop='fb600x400';
   //Mobile smart crop name
  // const mobile="Test250X250";
   const url = image.src;
@@ -11,7 +11,7 @@ function applySmartCrop(image) {
   // Remove the base URL by slicing the string
   const result = url.substring(authoredBaseUrl.length);
   // Desktop scene7 url  : https://s7ap1.scene7.com/is/image/wpppartnersandbox/peak-performance:fb600x400?fmt=png-alpha
-  console.log(dmBaseUrl+"/"+result+":"+desktop);
+  console.log(dmBaseUrl + '/' + result + ':' + desktop);
 }
 
 export default async function decorate(block) {
