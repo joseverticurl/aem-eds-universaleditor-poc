@@ -19,7 +19,7 @@ function applySmartCrop(image) {
   } else {
     finalUrl = `${finalUrl}:${desktop}`; // Tablet devices
   }
-  image.src=finalUrl;
+  image.src = finalUrl;
   // Desktop scene7 url  : https://s7ap1.scene7.com/is/image/wpppartnersandbox/peak-performance:fb600x400?fmt=png-alpha
   // const finalUrl = `${dmBaseUrl}/${result}:${desktop}`;
   console.log(image.src);
