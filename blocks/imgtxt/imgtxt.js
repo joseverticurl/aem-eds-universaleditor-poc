@@ -1,9 +1,6 @@
 // Function to apply smart cropping to the image
 function applySmartCrop(image) {
-
-  // Add your smart crop logic here..
-
-  
+  // Add your smart crop logic here..  
 }
 
 export default async function decorate(block) {
