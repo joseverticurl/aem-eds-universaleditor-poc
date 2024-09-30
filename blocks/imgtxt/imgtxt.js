@@ -7,7 +7,7 @@ function applySmartCrop(image) {
   // Mobile smart crop name
   const mobile = 'Test250X250';
 
-  const url = image.src; 
+  const url = image.src;
   const authorBaseUrl = 'https://author-p35060-e135954.adobeaemcloud.com/content/dam/aem-eds-universaleditor-training';
   let result = url.substring(authorBaseUrl.length);
   result = result.substring(0, result.length - 4);
