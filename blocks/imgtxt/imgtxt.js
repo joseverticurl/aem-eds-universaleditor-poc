@@ -5,7 +5,7 @@ function applySmartCrop(image) {
   //Desktop smart crop name 
   const desktop="fb600x400";
   //Mobile smart crop name
-  const mobile="Test250X250";
+ // const mobile="Test250X250";
   const url = image.src;
   const authoredBaseUrl = 'https://author-p35060-e135954.adobeaemcloud.com/content/dam/aem-eds-universaleditor-training';
   // Remove the base URL by slicing the string
