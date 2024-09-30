@@ -11,7 +11,7 @@ function applySmartCrop(image) {
   // Remove the base URL by slicing the string
   let result = url.substring(authoredBaseUrl.length);
   result = result.substring(0, result.length - 4);
-  let finalUrl = `${dmBaseUrl}/${result}:${desktop}`;
+  let finalUrl = `${dmBaseUrl}${result}`;
   if (window.matchMedia('(max-width: 767px)').matches) {
     finalUrl = `${finalUrl}:${mobile}`; // Mobile devices
   } else if (window.matchMedia('(min-width: 768px) and (max-width: 1024px)').matches) {
