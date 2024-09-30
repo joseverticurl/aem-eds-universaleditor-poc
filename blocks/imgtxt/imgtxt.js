@@ -17,7 +17,7 @@ function applySmartCrop(image) {
 
 export default async function decorate(block) {
   console.log('Block dataset image :', block.querySelector('[data-aue-prop="image"]'));
-  console.log('Block dataset smartCrop :', block.querySelector('[data-aue-prop="smartCrop"]'));
+  console.log('Block dataset smartCrop :', block.querySelector('[data-aue-prop="smartCrop"]').textContent);
   console.log('Block dataset text :', block.querySelector('[data-aue-prop="text"]'));
   console.log('Block dataset alignment :', block.querySelector('[data-aue-prop="alignment"]'));
   // Get the image, text, and alignment properties from the block
@@ -26,9 +26,9 @@ export default async function decorate(block) {
 
   // Apply smart crop if the image element exists
   if (image) {
-    const smartCropEnabled = true;
+    const smartCropEnabled = block.querySelector('[data-aue-prop="smartCrop"]').textContent;
     if (smartCropEnabled) {
       applySmartCrop(image);
     }
-  } 
+  }
 }
