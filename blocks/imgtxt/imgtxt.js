@@ -2,12 +2,14 @@
 function applySmartCrop(image) {
   // Add your smart crop logic here..
   const dmBaseUrl = 'https://s7ap1.scene7.com/is/image/wpppartnersandbox';
+  const authorBaseUrl = 'https://author-p35060-e135954.adobeaemcloud.com/content/dam/aem-eds-universaleditor-training';
+
   // Desktop smart crop name
   const desktop = 'fb600x400';
   // Mobile smart crop name
   const mobile = 'Test250X250';
-  const url = image.src;
-  const authorBaseUrl = 'https://author-p35060-e135954.adobeaemcloud.com/content/dam/aem-eds-universaleditor-training';
+
+  const url = image.src;  
   // Remove the base URL by slicing the string
   let result = url.substring(authorBaseUrl.length);
   result = result.substring(0, result.length - 4);
