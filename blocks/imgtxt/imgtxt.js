@@ -1,16 +1,14 @@
 // Function to apply smart cropping to the image
 function applySmartCrop(image) {
-  // Add your smart crop logic here..
+  // Dynamic Media base url
   const dmBaseUrl = 'https://s7ap1.scene7.com/is/image/wpppartnersandbox';
-  const authorBaseUrl = 'https://author-p35060-e135954.adobeaemcloud.com/content/dam/aem-eds-universaleditor-training';
-
   // Desktop smart crop name
   const desktop = 'fb600x400';
   // Mobile smart crop name
   const mobile = 'Test250X250';
 
-  const url = image.src;  
-  // Remove the base URL by slicing the string
+  const url = image.src; 
+  const authorBaseUrl = 'https://author-p35060-e135954.adobeaemcloud.com/content/dam/aem-eds-universaleditor-training';
   let result = url.substring(authorBaseUrl.length);
   result = result.substring(0, result.length - 4);
   let finalUrl = `${dmBaseUrl}${result}`;
@@ -25,11 +23,6 @@ function applySmartCrop(image) {
 }
 
 export default async function decorate(block) {
-  // console.log('Block dataset image :', block.querySelector('[data-aue-prop="image"]'));
-  // console.log('Block dataset smartCrop :', block.querySelector('[data-aue-prop="smartCrop"]').textContent);
-  // console.log('Block dataset text :', block.querySelector('[data-aue-prop="text"]'));
-  // console.log('Block dataset alignment :', block.querySelector('[data-aue-prop="alignment"]'));
-  // Get the image, text, and alignment properties from the block
   const image = block.querySelector('[data-aue-prop="image"]');
   // Apply smart crop if the image element exists
   if (image) {
