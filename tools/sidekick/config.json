@@ -2,7 +2,7 @@
   "plugins": [
     {
       "id": "aemedit",
-      "title": "Edit",
+      "title": "Edit-",
       "environments": [ "dev", "preview", "live" ],
       "event": "aemedit"
     }
