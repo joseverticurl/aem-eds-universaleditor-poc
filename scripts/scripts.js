@@ -148,4 +148,15 @@ async function loadPage() {
   loadDelayed();
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+  window.adobeDataLayer = window.adobeDataLayer || [];
+  window.adobeDataLayer.push({
+      "event": "page-view",
+      "eventInfo": {
+          "pageContext": {
+              "pageName": "home-page"
+          }
+      });
+});
+
 loadPage();
