@@ -8,7 +8,8 @@
         'event': 'page-view',
         'eventInfo': {
             'pageContext': {
-                'pageName': document.title || "unknown-page"
+                'pageName': document.title || 'unknown-page',
+                'pageUrl': window.location.href
             }
         }
     });
