@@ -6,7 +6,7 @@
 .imagetext-image {
     width: 400px;
     height: 300px;
-    object-fit: cover; /* Ensures the image respects the Smart Crop dimensions3 */
+    object-fit: cover; /* Ensures the image respects the Smart  Crop dimensions3 */
 }
 
 .imagetext-left .imagetext-image {
