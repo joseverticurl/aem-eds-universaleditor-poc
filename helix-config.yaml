@@ -3,7 +3,7 @@ strains:
     code:
       url: https://github.com/joseverticurl/aem-eds-universaleditor-training.git
     content:
-      url: https://aem-eds-universaleditor-training.hlx.page
+      url: https://aem-eds-universaleditor-poc.hlx.page
     condition: 
       url: '^.*$'
     headers:
