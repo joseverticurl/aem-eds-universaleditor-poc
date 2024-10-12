@@ -1,14 +1,10 @@
 {
-  "toolbar": {
-    "buttons": {
-        "publish": {
-            "text": "Publish",
-            "handler": "publishContent",
-            "renderCondition": {
-                "type": "permissions",
-                "permissions": ["crx:replicate","rep:write"]
-            }
-        }
-    }
- }
+    "plugins": [
+      {
+        "id": "aemedit",
+        "title": "Edit-",
+        "environments": [ "dev", "preview", "live" ],
+        "event": "aemedit"
+      }
+    ]
 }
