@@ -33,7 +33,7 @@
           "component": "boolean",
           "valueType": "boolean",
           "name": "smartCrop",
-          "label": "Enable Smart Crop",
+          "label": "Enable Smart Crop1234",
           "description": "Check this box to enable Smart Crop for the image",
           "default": false
         },
