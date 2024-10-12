@@ -71,6 +71,7 @@ async function customizeButtons(sk) {
 export async function initSidekick() {
   console.log('sidekick initialized by joseph');
   let sk = document.querySelector('helix-sidekick');
+  console.log(`sk details : ${sk}`);
   if (sk) {
     // sidekick already loaded
     await customizeButtons(sk);
