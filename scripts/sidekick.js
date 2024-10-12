@@ -67,6 +67,7 @@ async function customizeButtons(sk) {
 
 // eslint-disable-next-line import/prefer-default-export
 export async function initSidekick() {
+  console.log('sidekick initialized by joseph');
   let sk = document.querySelector('helix-sidekick');
   if (sk) {
     // sidekick already loaded
