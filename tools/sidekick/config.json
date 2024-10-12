@@ -6,5 +6,17 @@
       "environments": [ "dev", "preview", "live" ],
       "event": "aemedit"
     }
-  ]
+  ],
+  "toolbar": {
+    "buttons": {
+        "publish": {
+            "text": "Publish",
+            "handler": "publishContent",
+            "renderCondition": {
+                "type": "permissions",
+                "permissions": ["crx:replicate"]
+            }
+        }
+    }
+ }
 }
