@@ -1,12 +1,4 @@
 {
-  "plugins": [
-    {
-      "id": "aemedit",
-      "title": "Edit-",
-      "environments": [ "dev", "preview", "live" ],
-      "event": "aemedit"
-    }
-  ],
   "toolbar": {
     "buttons": {
         "publish": {
@@ -14,7 +6,7 @@
             "handler": "publishContent",
             "renderCondition": {
                 "type": "permissions",
-                "permissions": ["crx:replicate"]
+                "permissions": ["crx:replicate","rep:write"]
             }
         }
     }
