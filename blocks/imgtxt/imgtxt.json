@@ -27,7 +27,7 @@
     },
     "smartCrop": {
       "type": "checkbox",
-      "label": "Enable Smart Crop",
+      "label": "Enable Smart Crop1234",
       "description": "Enable smart cropping for the image",
       "default": false
     }
