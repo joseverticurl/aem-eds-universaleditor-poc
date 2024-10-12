@@ -8,7 +8,7 @@ function applySmartCrop(image) {
   const mobile = 'Test250X250';
 
   const url = image.src;
-  const authorBaseUrl = 'https://author-p35060-e135954.adobeaemcloud.com/content/dam/aem-eds-universaleditor-training';
+  const authorBaseUrl = 'https://author-p35060-e135910.adobeaemcloud.com/content/dam/aem-eds-universaleditor-poc';
   let result = url.substring(authorBaseUrl.length);
   result = result.substring(0, result.length - 4);
   let finalUrl = `${dmBaseUrl}${result}`;
