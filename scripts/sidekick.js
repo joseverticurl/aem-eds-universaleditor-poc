@@ -38,7 +38,7 @@ async function getElement(sk, selector) {
 function shouldHidePlugin(plugin) {
   console.log(`Plugin Class List :: ${plugin.classList}`);
   const [pluginCls] = plugin.classList;
-  return ['edit', 'reload', 'delete', 'publish', 'unpublish'].indexOf(pluginCls) !== -1;
+  return ['edit', 'reload', 'delete', 'unpublish'].indexOf(pluginCls) !== -1;
 }
 
 async function customizeButtons(sk) {
