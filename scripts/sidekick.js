@@ -77,7 +77,7 @@ export async function initSidekick() {
     await customizeButtons(sk);
   } else {
     // wait for sidekick to be loaded
-    document.addEventListener('sidekick-ready', async () => {
+    document.addEventListener('helix-sidekick-ready', async () => {
       sk = document.querySelector('helix-sidekick');
       await customizeButtons(sk);
     }, { once: true });
