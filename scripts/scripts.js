@@ -12,6 +12,7 @@ import {
   loadSections,
   loadCSS,
 } from './aem.js';
+import "@adobe/universal-editor-cors";
 
 /**
  * Moves all the attributes from a given elmenet to another given element.
