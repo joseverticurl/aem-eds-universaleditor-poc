@@ -3,10 +3,10 @@ window.hlx.initSidekick({
   host: 'localhost',
   plugins: [
     {
-      "id": "aemedit",
-      "title": "Edit-",
-      "environments": [ "dev", "preview", "live" ],
-      "event": "aemedit"
+      'id': 'aemedit',
+      'title': 'Edit-',
+      'environments': [ 'dev', 'preview', 'live' ],
+      'event': 'aemedit'
     },
     {
         id: 'disable-publish',
