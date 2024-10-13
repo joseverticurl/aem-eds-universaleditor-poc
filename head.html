@@ -6,12 +6,10 @@
 <script src="/scripts/aem.js" type="module"></script>
 <script src="/scripts/scripts.js" type="module"></script>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const publishButton = document.querySelector('[aria-label="Publish"]');
-      if (publishButton) {
-        publishButton.style.display = 'none';
-      }
-    });
-  </script>
+    const publishButton = document.querySelector('[aria-label="Publish"]');
+    if (publishButton) {
+      publishButton.style.display = 'none';
+    }
+</script>
   
 <link rel="stylesheet" href="/styles/styles.css"/>
