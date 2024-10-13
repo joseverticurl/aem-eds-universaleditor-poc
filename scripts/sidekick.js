@@ -79,7 +79,12 @@ export async function initSidekick() {
     // wait for sidekick to be loaded
     document.addEventListener('helix-sidekick-ready', async () => {
       sk = document.querySelector('helix-sidekick');
-      await customizeButtons(sk);
+      if (sk) {
+        // Ensure sidekick is not null before calling customizeButtons
+        await customizeButtons(sk);
+      } else {
+        console.error('Sidekick element not found after sidekick-ready event.');
+      }
     }, { once: true });
   }
 }
