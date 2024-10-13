@@ -6,10 +6,18 @@
 <script src="/scripts/aem.js" type="module"></script>
 <script src="/scripts/scripts.js" type="module"></script>
 <script>
-    const publishButton = document.querySelector('[aria-label="Publish"]');
-    if (publishButton) {
-      publishButton.style.display = 'none';
+  document.addEventListener('DOMContentLoaded', function() {
+    const iframe = document.querySelector('iframe');
+    if (iframe) {
+      iframe.onload = function() {
+        const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+        const head = iframeDocument.head || iframeDocument.getElementsByTagName('head')[0];
+        const meta = document.createElement('meta');
+        meta.name = 'urn:adobe:aue:config:disable';
+        meta.content = 'publish';
+        head.appendChild(meta);
+      };
     }
-</script>
-  
+  });  
+</script>  
 <link rel="stylesheet" href="/styles/styles.css"/>
