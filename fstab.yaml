@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p35060-e135954.adobeaemcloud.com/bin/franklin.delivery/joseverticurl/aem-eds-universaleditor-poc/main"
+    url: "https://author-p35060-e135910.adobeaemcloud.com/bin/franklin.delivery/joseverticurl/aem-eds-universaleditor-poc/main"
     type: "markup"
     suffix: ".html"
