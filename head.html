@@ -8,7 +8,7 @@
 <script>
     document.addEventListener('DOMContentLoaded', function() {
       const publishButton = document.querySelector('[aria-label="Publish"]');
-      if (publishButton && userRole !== 'admin') {
+      if (publishButton) {
         publishButton.style.display = 'none';
       }
     });
