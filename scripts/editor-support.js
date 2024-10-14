@@ -122,4 +122,10 @@ console.log(userRole);
 
 disablePublish();
 
+document.addEventListener('DOMContentLoaded', function() {
+  const currentPagePath = window.location.pathname;
+  console.log(`Current editing page path: ${currentPagePath}`);
+  // You can use this path in your logic here
+});
+
 attachEventListners(document.querySelector('main'));
