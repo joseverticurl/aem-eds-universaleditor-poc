@@ -120,7 +120,10 @@ async function getUserDetails() {
 const userRole = await getUserDetails();
 console.log('User Role :: ');
 console.log(userRole);
-
-disablePublish();
+console.log(userRole.permissions.replicate);
+const canReplicate = userRole.permissions.replicate;
+if(!canReplicate){
+  disablePublish();
+}
 
 attachEventListners(document.querySelector('main'));
