@@ -10,14 +10,6 @@ import {
 import { decorateRichtext } from './editor-support-rte.js';
 import { decorateMain } from './scripts.js';
 
-// added to scripts/editor-support.js
-function disablePublish() {
-  const meta = document.createElement('meta');
-  meta.setAttribute('name', 'urn:adobe:aue:config:disable');
-  meta.setAttribute('content', 'publish');
-  document.getElementsByTagName('head')[0].appendChild(meta);
-}
-
 async function applyChanges(event) {
   // redecorate default content and blocks on patches (in the properties rail)
   const { detail } = event;
