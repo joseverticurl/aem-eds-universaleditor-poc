@@ -119,13 +119,9 @@ async function getUserDetails() {
 const userRole = await getUserDetails();
 console.log('User Role :: ');
 console.log(userRole);
+const currentPagePath = window.location.pathname;
+console.log(`Current editing page path: ${currentPagePath}`);
 
 disablePublish();
-
-document.addEventListener('DOMContentLoaded', function() {
-  const currentPagePath = window.location.pathname;
-  console.log(`Current editing page path: ${currentPagePath}`);
-  // You can use this path in your logic here
-});
 
 attachEventListners(document.querySelector('main'));
