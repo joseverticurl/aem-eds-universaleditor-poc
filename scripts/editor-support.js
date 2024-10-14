@@ -123,7 +123,7 @@ console.log(userRole);
 console.log(userRole.permissions.replicate);
 const canReplicate = userRole.permissions.replicate;
 if (!canReplicate) {
-  disablePublish();
+  // disablePublish();
 }
 
 attachEventListners(document.querySelector('main'));
