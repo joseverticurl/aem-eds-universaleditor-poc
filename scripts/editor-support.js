@@ -10,12 +10,6 @@ import {
 import { decorateRichtext } from './editor-support-rte.js';
 import { decorateMain } from './scripts.js';
 
-const userInfo = window.Granite.author || window.Granite.context;
-const userId = userInfo.userID;
-const userGroups = userInfo.groups;
-console.log('User ID:', userId);
-console.log('User Roles/Groups:', userGroups);
-
 // added to scripts/editor-support.js
 function disablePublish() {
   const meta = document.createElement('meta');
