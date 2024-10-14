@@ -18,6 +18,13 @@ function disablePublish() {
   document.getElementsByTagName('head')[0].appendChild(meta);
 }
 
+async function getUserRole() {
+  // Replace with your actual API endpoint
+  const response = await fetch('/api/getUserRole');
+  const data = await response.json();
+  return data.role;
+}
+
 async function applyChanges(event) {
   // redecorate default content and blocks on patches (in the properties rail)
   const { detail } = event;
@@ -109,6 +116,10 @@ function attachEventListners(main) {
     if (!applied) window.location.reload();
   }));
 }
+
+const userRole = await getUserRole();
+console.log('User Role :: ');
+console.log(userRole);
 
 disablePublish();
 
