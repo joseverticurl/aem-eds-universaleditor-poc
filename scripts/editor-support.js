@@ -10,9 +10,9 @@ import {
 import { decorateRichtext } from './editor-support-rte.js';
 import { decorateMain } from './scripts.js';
 
-var userInfo = window.Granite.author || window.Granite.context;
-var userId = userInfo.userID;  // Get the user ID
-var userGroups = userInfo.groups;  // Get the groups/roles the user belongs to
+let userInfo = window.Granite.author || window.Granite.context;
+let userId = userInfo.userID;
+let userGroups = userInfo.groups;
 console.log('User ID:', userId);
 console.log('User Roles/Groups:', userGroups);
 
