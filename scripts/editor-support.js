@@ -18,13 +18,6 @@ function disablePublish() {
   document.getElementsByTagName('head')[0].appendChild(meta);
 }
 
-async function getUserRole() {
-  // Replace with your actual API endpoint
-  const response = await fetch('/api/getUserRole');
-  const data = await response.json();
-  return data.role;
-}
-
 async function applyChanges(event) {
   // redecorate default content and blocks on patches (in the properties rail)
   const { detail } = event;
@@ -117,7 +110,13 @@ function attachEventListners(main) {
   }));
 }
 
-const userRole = await getUserRole();
+async function getUserDetails() {
+  const response = await fetch('https://author-p35060-e135910.adobeaemcloud.com/libs/wcm/core/content/pageinfo.json?path=/content/aem-eds-universaleditor-poc/index');
+  const userDetails = await response.json();
+  return userDetails;
+}
+
+const userRole = await getUserDetails();
 console.log('User Role :: ');
 console.log(userRole);
 
