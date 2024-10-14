@@ -111,7 +111,8 @@ function attachEventListners(main) {
 }
 
 async function getUserDetails() {
-  const response = await fetch('/libs/wcm/core/content/pageinfo.json?path=/content/aem-eds-universaleditor-poc/index');
+  const currentPagePath = window.location.pathname;
+  const response = await fetch(`/libs/wcm/core/content/pageinfo.json?path=${currentPagePath}`);
   const userDetails = await response.json();
   return userDetails;
 }
@@ -119,8 +120,6 @@ async function getUserDetails() {
 const userRole = await getUserDetails();
 console.log('User Role :: ');
 console.log(userRole);
-const currentPagePath = window.location.pathname;
-console.log(`Current editing page path: ${currentPagePath}`);
 
 disablePublish();
 
