@@ -122,7 +122,7 @@ console.log('User Role :: ');
 console.log(userRole);
 console.log(userRole.permissions.replicate);
 const canReplicate = userRole.permissions.replicate;
-if(!canReplicate){
+if (!canReplicate) {
   disablePublish();
 }
 
