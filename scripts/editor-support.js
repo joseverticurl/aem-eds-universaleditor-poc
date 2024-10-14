@@ -111,7 +111,7 @@ function attachEventListners(main) {
 }
 
 async function getUserDetails() {
-  const response = await fetch('https://author-p35060-e135910.adobeaemcloud.com/libs/wcm/core/content/pageinfo.json?path=/content/aem-eds-universaleditor-poc/index');
+  const response = await fetch('/libs/wcm/core/content/pageinfo.json?path=/content/aem-eds-universaleditor-poc/index');
   const userDetails = await response.json();
   return userDetails;
 }
