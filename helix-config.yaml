@@ -6,8 +6,5 @@ strains:
       url: https://aem-eds-universaleditor-poc.hlx.page
     condition:
       url: '^.*$'
-    sidekick:
-      urn:adobe:aue:config:disable:
-        - publish
     headers:
       cache-control: "max-age=0, stale-while-revalidate=600, stale-if-error=86400"
