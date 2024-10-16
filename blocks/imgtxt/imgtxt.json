@@ -6,7 +6,7 @@
     "image": {
       "type": "dynamicMedia",
       "label": "Image",
-      "description": "Select an image from Dynamic Media with Smart Crop",
+      "description": "Select an image from Dynamic Media with Smart Crop-Dev1",
       "required": true
     },
     "text": {
