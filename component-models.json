@@ -193,7 +193,7 @@
         "valueType": "string",
         "name": "image",
         "label": "Image",
-        "description": "Select an image from Dynamic Media with Smart Crop",
+        "description": "Select an image from Dynamic Media with Smart Crop-main",
         "required": true,
         "smartCrop": true
       },
