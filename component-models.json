@@ -240,7 +240,7 @@
         "component": "custom-asset-namespace:custom-asset",
         "name": "image",
         "label": "Image",
-        "configUrl": "https://main--aem-eds-universaleditor-poc--joseverticurl.aem.page/tools/assets-selector/config.json",
+        "configUrl": "/tools/assets-selector/config.json",
         "valueType": "string"
       },
       {
