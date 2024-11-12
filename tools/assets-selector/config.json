@@ -2,6 +2,12 @@
     "repoNames": [
       "delivery-p35060-e135910.adobeaemcloud.com"
     ],
+    "repositoryFilter": [
+      {
+        "name": "EDS Repository",
+        "repositoryNamePattern": "delivery-*"
+      }
+    ],
     "preferredDimensions":{
         "minWidth": 500,
         "maxWidth": 2000, 
