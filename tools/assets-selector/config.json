@@ -1,7 +1,5 @@
 {
-    "repoNames": [
-      "delivery-p35060-e135910.adobeaemcloud.com"
-    ],
+    "repoNames": "delivery-p35060-e135910.adobeaemcloud.com",
     "preferredDimensions":{
         "minWidth": 500,
         "maxWidth": 2000, 
