@@ -1,12 +1,12 @@
 {
   "mappings": [
-    "/content/aem-eds-univeditor-poc/:/",
-    "/content/aem-eds-univeditor-poc/configuration:/.helix/config.json",
-    "/content/aem-eds-univeditor-poc/metadata:/metadata.json",
-    "/content/aem-eds-univeditor-poc/redirects:/redirects.json",
-    "/content/aem-eds-univeditor-poc/spreadsheet:/spreadsheet.json"
+    "/content/eds-universaleditor-poc/:/",
+    "/content/eds-universaleditor-poc/configuration:/.helix/config.json",
+    "/content/eds-universaleditor-poc/metadata:/metadata.json",
+    "/content/eds-universaleditor-poc/redirects:/redirects.json",
+    "/content/eds-universaleditor-poc/spreadsheet:/spreadsheet.json"
   ],
   "includes": [
-    "/content/aem-eds-univeditor-poc/"
+    "/content/eds-universaleditor-poc/"
   ]
 }
