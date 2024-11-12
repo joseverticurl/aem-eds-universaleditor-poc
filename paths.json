@@ -2,7 +2,9 @@
   "mappings": [
     "/content/aem-eds-universaleditor-poc/:/",
     "/content/aem-eds-universaleditor-poc/configuration:/.helix/config.json",
-    "/content/aem-eds-universaleditor-poc/metadata:/metadata.json"
+    "/content/aem-eds-universaleditor-poc/metadata:/metadata.json",
+    "/content/aem-eds-universaleditor-poc/redirects:/redirects.json",
+    "/content/aem-eds-universaleditor-poc/spreadsheet:/spreadsheet.json"
   ],
   "includes": [
     "/content/aem-eds-universaleditor-poc/"
