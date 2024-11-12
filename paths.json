@@ -1,5 +1,10 @@
 {
   "mappings": [
-    "/content/aem-eds-universaleditor-poc/:/"    
+    "/content/aem-eds-universaleditor-poc/:/",
+    "/content/aem-eds-universaleditor-poc/configuration:/.helix/config.json",
+    "/content/aem-eds-universaleditor-poc/metadata:/metadata.json"
+  ],
+  "includes": [
+    "/content/aem-eds-universaleditor-poc/"
   ]
 }
