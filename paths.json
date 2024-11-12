@@ -1,10 +1,11 @@
 {
   "mappings": [
     "/content/eds-universaleditor-poc/:/",
-    "/content/eds-universaleditor-poc/configuration:/config.json",
+    "/content/eds-universaleditor-poc/configuration:/.helix/config.json",
     "/content/eds-universaleditor-poc/metadata:/metadata.json",
     "/content/eds-universaleditor-poc/redirects:/redirects.json",
-    "/content/eds-universaleditor-poc/spreadsheet:/spreadsheet.json"
+    "/content/eds-universaleditor-poc/spreadsheet:/spreadsheet.json",
+    "/content/eds-universaleditor-poc/index/overview:/overview.html"
   ],
   "includes": [
     "/content/eds-universaleditor-poc/"
