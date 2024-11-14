@@ -2,7 +2,8 @@
     "repoNames": [
       "delivery-p35060-e135910.adobeaemcloud.com"
     ],
-    "aem:tier":"delivery",
+    "aemTierType": "delivery",
+    "rail":"false",
     "preferredDimensions":{
         "minWidth": 500,
         "maxWidth": 2000, 
