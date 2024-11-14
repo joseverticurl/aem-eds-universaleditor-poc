@@ -2,8 +2,7 @@
     "repoNames": [
       "delivery-p35060-e135910.adobeaemcloud.com"
     ],
-    "aemTierType": "scene7",
-    "repositoryNamePattern": "delivery-*",
+    "aemTierType": "delivery",
     "preferredDimensions":{
         "minWidth": 500,
         "maxWidth": 2000, 
