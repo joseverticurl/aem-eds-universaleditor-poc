@@ -3,7 +3,6 @@
       "delivery-p35060-e135910.adobeaemcloud.com"
     ],
     "aemTierType": "delivery",
-    "rail":"false",
     "preferredDimensions":{
         "minWidth": 500,
         "maxWidth": 2000, 
